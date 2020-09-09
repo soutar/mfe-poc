@@ -1,0 +1,19 @@
+{
+  "name": "microfrontends",
+  "private": "true",
+  "license": "UNLICENSED",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently 'node dev-server.js' 'lerna run --parallel dev'",
+    "build": "lerna run build",
+    "serve": "concurrently 'node dev-server.js' 'lerna run --parallel serve'"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "http-proxy": "^1.18.1",
+    "lerna": "3.22.1"
+  }
+}

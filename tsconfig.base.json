@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "strict": true,
+    "lib": ["ES2015", "DOM"],
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true
+  }
+}
